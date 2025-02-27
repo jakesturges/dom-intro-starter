@@ -38,3 +38,9 @@ for (let i = 0; i < svgs.length; i++) {
 document.querySelector("#query .bold").style.color = "#7C9EA6";
 
 // 6. Changing DOM Node Content
+document.querySelector(".content_list li").textContent = "This is new list item text";
+
+document.querySelectorAll(".content_list li")[2].innerHTML += "<strong> - Jake Sturges</strong>"
+
+// 7. Removing an Attribute
+document.querySelector("section span a").removeAttribute("hidden");
